@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul li{
+    list-style-type: none;
+}
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header-section{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.header-section .container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header-menu .menu{
+    display: flex;
+}
+.header-menu .menu li a{
+    font-family: 'Releway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    padding: 14px 30px;
+    text-transform: uppercase;
+}
+.header-menu .menu li:last-child a{
+    padding-right: 0;
+}
+/*----------------- Banner section --------*/
+.banner-section{
+    background-image: url(./img/Banner-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 260px;
+    padding-bottom: 160px;
+}
+.banner-section .container h1{
+    font-size: 65px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    line-height: 68px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 80px;
+}
+.banner-section .container p{
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Releway', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 0 130px;
+}
+.banner-section .container a{
+    font-size: 13px;
+    background-color: orange;
+    font-family: 'Releway', sans-serif;
+    padding: 20px 45px;
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+}
+
+/* ------------------- service section -------------- */
+
+.service-section{
+    padding: 122px 0;
+}
+.service-section .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 54px;
+}
+.service-section .container .service-card{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-section .container .service-card h3{
+    font-family: 'Releway', sans-serif;
+    font-weight: 700;
+    margin: 35px;
+    margin-bottom: 26px;
+    color: #2D3033;
+    text-transform: uppercase;
+
+}
+.service-section .container .service-card p{
+    text-align: center;
+    font-family: 'Releway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #767B82;
+    padding: 0 26px;
+}
+/*---------------- gallery section -----------------*/
+.gallery-section{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+.gallery-section .gallery-item{
+    max-width: calc(25% - 1px);
+    cursor: pointer;
+    position: relative;
+}
+.gallery-section .gallery-item img{
+    width: 100%;
+    height: 100%;
+}
+.overtay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s background ease-in-out;
+}
+.gallery-section .gallery-item:hover .overtay{
+    background: rgba(218, 71, 71,0.6 )
+}
+.gallery-content{
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+.gallery-content h3{
+    font-family: 'Releway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+}
+.gallery-content p{
+    font-family: 'Releway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.gallery-section .gallery-item:hover .gallery-content{
+    opacity: 1;
+}
+
+/*--------------------- team section------------*/
+.team-section{
+    padding: 100px 0;
+}
+.team-section .container{
+    display: flex;
+    justify-content: space-between;
+}
+.team-member{
+    max-width: calc(25% - 22.5px);
+}
+.team-member h3 .team-member p{
+    font-family: 'Releway', sans-serif;
+}
+.team-member h3{
+    font-size: 22px;
+    color: #2D3033;
+    margin-top: 31px;
+    margin-bottom: 12px;
+}
+.team-member p:first-of-type{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: tomato;
+
+}
+.team-member p:last-of-type{
+    font-size: 14px;
+    color: #767B82;
+    margin: 31px 0;
+}
+.team-member_social-icon{
+    display: flex;
+    column-gap: 4px;
+}
+.team-member_social-icon a{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #E8E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------- testimonial section----------*/
+
+.testimonial-section{
+    background-color: saddlebrown;
+}
+.testimonial-content{
+    display: flex;
+}
+.tc-item{
+    width: 50%;
+}
+.testimonial-image img{
+    width: 100%;
+    height: 100%;
+}
+.testimonial-text{
+    padding-top: 111px;
+    padding-left: 85px;
+}
+.testimonial-text p:first-of-type{
+    font-size: 36px;
+  font-style: italic;
+  color: #fff;
+  padding-right: 200px;
+}
+.testimonial-text p:last-of-type{
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Releway', sans-serif;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+.indicator{
+    display: flex;
+    margin-top: 65px;
+    margin-left: 200px;
+    column-gap: 6px;
+}
+.indicator-item{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(80, 88, 96, 0.786);
+}
+.indicator .indicator-item:nth-child(1){
+    background-color: rgb(185, 163, 159);
+}
